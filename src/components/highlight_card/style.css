@@ -1,0 +1,45 @@
+.image_parm{
+    max-height: 250px;
+    max-width: 400px;
+    border-radius: 5%;
+    object-fit: cover;
+    border-radius: 20px;
+    margin: 0%;
+}
+
+.higlight_title{
+    margin: 1vh 0vw;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.higlight_loc{
+    margin: 1vh 0vw;
+    font-family: sans-serif;
+    font-weight: 400;
+    color: #757575;    
+}
+
+.higlight_desc{
+    margin: 1.5vh 0vw;
+    font-family: sans-serif;
+    color: #191919;
+    font-size: 14px;
+    width: 90%;
+    letter-spacing: 0.3mm;
+    
+    overflow: hidden;
+    display:  -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+@media (max-width: 730px) {
+    .higlight_desc{
+        width: 80%;
+    }
+}
+
+.highlight_card{
+    max-width: 450px;
+}
