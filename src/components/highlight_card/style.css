@@ -1,6 +1,8 @@
 .image_parm{
     max-height: 250px;
+    height: 100%;
     max-width: 400px;
+    width: 100%;
     border-radius: 5%;
     object-fit: cover;
     border-radius: 20px;

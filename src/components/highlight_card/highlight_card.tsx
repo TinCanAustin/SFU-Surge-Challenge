@@ -1,17 +1,17 @@
+import { search } from "@/functions/searchImage";
 import no_img_found from "../../../public/no_img_found.png"
 import './style.css'
 
-function Highlight_card({name, location, desc, img_id}:{
+async function Highlight_card({name, location, desc}:{
     name: string,
     location: string,
     desc: string,
-    img_id?: string
 }){
+    const data = await search(name);
+
     return(
         <div className="highlight_card">
-            <img src={
-                img_id ? img_id : no_img_found.src
-            } alt="No Image Found" className="image_parm"/>
+            <img src={data ? data : no_img_found.src} alt="No Image Found" className="image_parm"/>
             <h3 className="higlight_title">{name}</h3>
             <p className="higlight_loc">{location}</p>
             <p className="higlight_desc">{desc}</p>
