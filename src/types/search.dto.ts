@@ -1,4 +1,4 @@
-export interface search{
+export interface search_tp{
     image: {
         height: number,
         width: number
