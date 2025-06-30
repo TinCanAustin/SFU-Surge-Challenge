@@ -11,7 +11,7 @@ async function Highlight_card({name, location, desc}:{
 
     return(
         <div className="highlight_card">
-            <img src={data ? data : no_img_found.src} alt="No Image Found" className="image_parm"/>
+            <img src={data ? data : no_img_found.src} alt="No Image Found" width={400} className="image_parm"/>
             <h3 className="higlight_title">{name}</h3>
             <p className="higlight_loc">{location}</p>
             <p className="higlight_desc">{desc}</p>

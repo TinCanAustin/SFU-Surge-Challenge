@@ -28,7 +28,7 @@ export async function sendHighlights(title: string, loc: string, desc: string) {
 
          const link = `https://surgetakehome.vercel.app/api/postreview/${process.env.NEXT_PUBLIC_SECRET}`;
 
-        const res = await fetch(link,
+        await fetch(link,
             {
                 method: 'POST',
                 headers: {
@@ -38,7 +38,6 @@ export async function sendHighlights(title: string, loc: string, desc: string) {
                 mode: 'no-cors'
             }
         );
-        const data = await res.status;
 
         return true;
     }catch(err){

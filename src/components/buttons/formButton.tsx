@@ -1,5 +1,4 @@
 'use client';
-import addIcon from '../../../public/add_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg'
 import './style.css'
 
 function FormButton({text, type, onClick}:{

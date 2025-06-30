@@ -16,7 +16,7 @@ export async function search(img_src : string){
         const items = body["items"] as search_tp[];
         
         if(items){
-           for(let e of items){
+           for(const e of items){
             if(e.image.height >= 250 && e.image.width >= 400){
                 return e.link;
             }
