@@ -10,7 +10,7 @@ export default async function Home(){
             <Header/>
             <div className="grid-display">
                 {highlights.map(item => (
-                    <div className="card"><Highlight_card key={item.id} name={item.title} location={item.location} desc={item.description}/></div>
+                    <div className="card" key={item.id}><Highlight_card name={item.title} location={item.location} desc={item.description}/></div>
                 ))}
             </div>
         </>
