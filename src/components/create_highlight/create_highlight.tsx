@@ -15,7 +15,7 @@ function Create_highlight(){
         <div id='form'>
             <div className="form-head">
                 <h2>Create a highlight</h2>
-                <a onClick={()=>{}}>x</a>
+                <a onClick={handleRoute}>x</a>
             </div>
             <form className="form-fields">
                 <label htmlFor="name">Highlight name <span>*</span></label>
