@@ -25,7 +25,8 @@ function Create_highlight(){
 
         const result = await sendHighlights(title, loc, desc);
         if(result){
-            router.back();
+            router.push('/');
+            router.refresh();
         }else{
             alert("FAIL");
         }

@@ -2,7 +2,9 @@ import { highlight } from "@/types/highlights.dot";
 
 export async function getHighlights() : Promise<highlight[]>{
     try{
-        const response = await fetch(`https://surgetakehome.vercel.app/api/getreviews/${process.env.NEXT_PUBLIC_SECRET}`,
+        const link = `https://surgetakehome.vercel.app/api/getreviews/${process.env.NEXT_PUBLIC_SECRET}`
+        
+        const response = await fetch(link,
             {
                 method: 'GET'
             }
@@ -26,7 +28,7 @@ export async function sendHighlights(title: string, loc: string, desc: string) {
             "description": desc
         }
 
-         const link = `https://surgetakehome.vercel.app/api/postreview/${process.env.NEXT_PUBLIC_SECRET}`;
+        const link = `https://surgetakehome.vercel.app/api/postreview/${process.env.NEXT_PUBLIC_SECRET}`;
 
         await fetch(link,
             {
