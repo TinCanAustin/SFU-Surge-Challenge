@@ -1,6 +1,6 @@
 'use client';
 
-import Reuse_button from '../reuse_button/reuse_button';
+import FormButton from '../buttons/formButton';
 import './style.css'
 
 function Create_highlight(){
@@ -19,8 +19,8 @@ function Create_highlight(){
                 <textarea name="desc"></textarea>
             </form>
             <div className='form-buttons'>
-                <div className='add_pad'><Reuse_button text="Cancel" type='cancel' onClick={()=>{}}/></div>
-                <div className='add_pad'><Reuse_button text="Confrim" type='confirm' onClick={()=>{}}/></div>
+                <div className='add_pad'><FormButton text="Cancel" type='cancel' onClick={()=>{}}/></div>
+                <div className='add_pad'><FormButton text="Confrim" type='confirm' onClick={()=>{}}/></div>
             </div>
         </div>
     );
