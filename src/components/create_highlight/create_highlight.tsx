@@ -1,9 +1,16 @@
 'use client';
 
+import { useRouter } from 'next/navigation';
 import FormButton from '../buttons/formButton';
 import './style.css'
 
 function Create_highlight(){
+    const router = useRouter();
+
+    const handleRoute = () =>{
+        router.back();
+    }
+
     return(
         <div id='form'>
             <div className="form-head">
@@ -19,7 +26,7 @@ function Create_highlight(){
                 <textarea name="desc"></textarea>
             </form>
             <div className='form-buttons'>
-                <div className='add_pad'><FormButton text="Cancel" type='cancel' onClick={()=>{}}/></div>
+                <div className='add_pad'><FormButton text="Cancel" type='cancel' onClick={handleRoute}/></div>
                 <div className='add_pad'><FormButton text="Confrim" type='confirm' onClick={()=>{}}/></div>
             </div>
         </div>

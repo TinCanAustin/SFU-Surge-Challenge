@@ -15,11 +15,12 @@ export async function search(img_src : string){
         const body = await response.json();
         const items = body["items"] as search_tp[];
         
-
-        for(let e of items){
+        if(items){
+           for(let e of items){
             if(e.image.height >= 250 && e.image.width >= 400){
                 return e.link;
             }
+        }     
         }
     } catch (err){
         console.error(err);
