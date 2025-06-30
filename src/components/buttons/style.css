@@ -1,0 +1,50 @@
+.btn{
+    display: flex;
+    height: 52px;
+    width: 130px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    border: 0px;
+    position: relative;
+    
+}
+
+.btn::before{
+    position: absolute;
+    content: "";
+    height: 56px;
+    width: 134px;
+    background-image: linear-gradient(to top, #DB272A,#F47274);
+    z-index: -1;
+    border-radius: 17px;
+}
+.btn:hover::before{
+    background-image: linear-gradient(to top, #BE181B,#EC484B);
+}
+
+.add, .confirm{
+    background-color: #ec484b;
+    color: white;
+}
+.add:hover, .confirm:hover{
+    background-color: #F11548;
+}
+
+.cancel{
+    background-color: white;
+    color: black;
+}
+
+.btn-icon{
+    height: 25px;
+    width: 25px;
+    margin: 0%;
+}
+
+.btn-text{
+    margin: 0%;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    padding: 0vh 0.3vw;
+}

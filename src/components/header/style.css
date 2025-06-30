@@ -1,0 +1,31 @@
+#header{
+    max-width: 650px;
+    margin-bottom: 5vh;
+}
+
+#head{
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #ec484b;
+    margin: 0px;
+}
+
+#title{
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    margin: 0.5vh 0px;
+}
+
+#disc{
+    font-family: "Lato", sans-serif;
+    width: 100%;
+    margin: 1.5vh 0px;
+}
+
+@media (max-width: 730px) {
+    #disc{
+        width: 80%;
+    }
+}
