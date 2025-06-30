@@ -1,0 +1,73 @@
+#form{
+    width: 550px;
+}
+
+.form-head{
+    display: flex;
+    justify-content: space-between;
+    margin: 2vh 0vw;
+    font-family: "Inter", sans-serif;
+}
+
+.form-head > h2{
+    font-weight: 600;
+}
+
+.form-head > a{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.form-fields{
+    display: flex;
+    flex-direction: column;
+    font-family: "Inter", sans-serif;
+}
+
+.form-fields > textarea {
+    max-width: 99%;
+    min-width: 99%;
+    height: 170px;
+    margin-bottom: 1vh;
+    font-family: "Inter", sans-serif;
+}
+
+.form-fields > input {
+    height: 44px;
+}
+
+.form-fields > input,  .form-fields > textarea{
+
+    border: none;
+    appearance: none;
+    outline: none;
+
+    font-size: 18px;
+    padding: 1vh 0vw;
+
+    /* border-radius: 0;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background:
+        linear-gradient(90deg, #ccc, #ccc) left bottom/100% 2px no-repeat,
+        linear-gradient(90deg, #fafafa, #fafafa) left bottom/100% no-repeat; */
+}
+
+.form-fields > label {
+    font-weight: 500;
+    padding: 1vh 0vw;
+    border: 0px;
+}
+
+.form-fields > label > span {
+    color: red;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: right;
+}
+
+.add_pad {
+    margin-left: 2.5vw;
+}
