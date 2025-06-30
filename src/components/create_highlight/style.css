@@ -1,5 +1,9 @@
 #form{
     width: 550px;
+    background-color: white;
+    z-index: -2;
+    padding: 2vh 2vw;
+    border-radius: 20px;
 }
 
 .form-head{
